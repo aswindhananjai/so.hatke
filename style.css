@@ -120,16 +120,17 @@ body {
 
 /* ===== MAIN CONTENT ===== */
 .main-content {
-    padding: var(--spacing-md) 0;
-    max-height: calc(100vh - 100px);
+    padding: var(--spacing-lg);
+    background: #f5f5f5;
+    max-height: 100vh;
     overflow: hidden;
 }
 
 .configurator-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-md);
-    align-items: start;
+    gap: var(--spacing-lg);
+    align-items: stretch;
     height: calc(100vh - 140px);
 }
 
@@ -236,20 +237,19 @@ body {
 
 .brand-tab.selected {
     border-color: var(--primary-orange);
-    background: var(--primary-orange);
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 87, 56, 0.3);
+    border-width: 3px;
+    background: white;
+    color: var(--primary-orange);
 }
 
 .tab-price {
     font-size: 0.75rem;
     font-weight: 700;
-    color: var(--primary-orange);
+    color: #666;
 }
 
 .brand-tab.selected .tab-price {
-    color: white;
+    color: var(--primary-orange);
 }
 
 /* ===== COLOR CIRCLES ===== */
@@ -279,9 +279,7 @@ body {
 
 .color-circle.selected {
     border-color: var(--primary-orange);
-    border-width: 4px;
-    box-shadow: 0 0 0 3px rgba(255, 87, 56, 0.3);
-    transform: scale(1.15);
+    border-width: 3px;
 }
 
 .circle-swatch {
@@ -322,10 +320,9 @@ body {
 
 .size-circle.selected {
     border-color: var(--primary-orange);
-    background: var(--primary-orange);
-    color: white;
-    transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(255, 87, 56, 0.3);
+    border-width: 3px;
+    background: white;
+    color: var(--primary-orange);
 }
 
 /* Gradient for ombre */
