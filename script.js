@@ -200,6 +200,17 @@ document.querySelectorAll('.color-card').forEach(card => {
     });
 });
 
+// Size selection
+document.querySelectorAll('.size-circle').forEach(circle => {
+    circle.addEventListener('click', function () {
+        document.querySelectorAll('.size-circle').forEach(c => c.classList.remove('selected'));
+        this.classList.add('selected');
+
+        state.size = this.dataset.size.toUpperCase();
+        checkPhase1Complete();
+    });
+});
+
 function checkPhase1Complete() {
     if (state.brand && state.color) {
         elements.nextToPhase2.disabled = false;
