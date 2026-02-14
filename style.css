@@ -36,10 +36,13 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #F0E7D5 0%, #E8DCC8 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: var(--text-dark);
-    min-height: 100vh;
+    overflow: hidden;
+    height: 100vh;
     line-height: 1.6;
 }
 
@@ -234,7 +237,7 @@ body {
 }
 
 .option-group.compact {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
 }
 
 .option-label {
