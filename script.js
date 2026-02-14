@@ -3,6 +3,7 @@ const state = {
     brand: null,
     brandPrice: 0,
     color: null,
+    size: null,
     graphics: [],
     customText: '',
     font: 'graffiti',
@@ -318,7 +319,7 @@ elements.finalizeBtn.addEventListener('click', () => {
 
     // Replace with your actual WhatsApp business number
     // Format: country code + number (no + or spaces)
-    const whatsappNumber = '919876543210'; // Replace with your number
+    const whatsappNumber = '918196949280'; // Replace with your number
 
     // Open WhatsApp
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;

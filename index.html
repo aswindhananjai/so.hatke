@@ -40,53 +40,57 @@
                             Choose Your Canvas
                         </h2>
 
-                        <div class="option-group">
-                            <h3 class="option-label">Select Brand</h3>
-                            <div class="brand-grid">
-                                <button class="brand-card" data-brand="levis" data-price="3499">
-                                    <span class="brand-name">Levi's</span>
-                                    <span class="brand-price">₹3,499</span>
+                        <div class="option-group compact">
+                            <h3 class="option-label">Brand</h3>
+                            <div class="brand-tabs">
+                                <button class="brand-tab" data-brand="levis" data-price="3499">
+                                    Levi's <span class="tab-price">₹3,499</span>
                                 </button>
-                                <button class="brand-card" data-brand="zara" data-price="2499">
-                                    <span class="brand-name">Zara</span>
-                                    <span class="brand-price">₹2,499</span>
+                                <button class="brand-tab" data-brand="zara" data-price="2499">
+                                    Zara <span class="tab-price">₹2,499</span>
                                 </button>
-                                <button class="brand-card" data-brand="hm" data-price="1999">
-                                    <span class="brand-name">H&M</span>
-                                    <span class="brand-price">₹1,999</span>
+                                <button class="brand-tab" data-brand="hm" data-price="1999">
+                                    H&M <span class="tab-price">₹1,999</span>
                                 </button>
-                                <button class="brand-card" data-brand="thrifted" data-price="1499">
-                                    <span class="brand-name">Thrifted</span>
-                                    <span class="brand-price">₹1,499</span>
+                                <button class="brand-tab" data-brand="thrifted" data-price="1499">
+                                    Thrifted <span class="tab-price">₹1,499</span>
                                 </button>
                             </div>
                         </div>
 
-                        <div class="option-group">
-                            <h3 class="option-label">Denim Color</h3>
-                            <div class="color-grid">
-                                <button class="color-card" data-color="light">
-                                    <span class="color-swatch" style="background: #A4C8E1;"></span>
-                                    <span class="color-name">Light Wash</span>
+                        <div class="option-group compact">
+                            <h3 class="option-label">Color</h3>
+                            <div class="color-circles">
+                                <button class="color-circle" data-color="light" title="Light Wash">
+                                    <span class="circle-swatch" style="background: #A4C8E1;"></span>
                                 </button>
-                                <button class="color-card" data-color="dark">
-                                    <span class="color-swatch" style="background: #2C3E50;"></span>
-                                    <span class="color-name">Dark Wash</span>
+                                <button class="color-circle" data-color="dark" title="Dark Wash">
+                                    <span class="circle-swatch" style="background: #2C3E50;"></span>
                                 </button>
-                                <button class="color-card" data-color="black">
-                                    <span class="color-swatch" style="background: #1A1A1A;"></span>
-                                    <span class="color-name">Black</span>
+                                <button class="color-circle" data-color="black" title="Black">
+                                    <span class="circle-swatch" style="background: #1A1A1A;"></span>
                                 </button>
-                                <button class="color-card" data-color="ombre">
-                                    <span class="color-swatch gradient-ombre"></span>
-                                    <span class="color-name">Custom Ombre</span>
+                                <button class="color-circle" data-color="ombre" title="Custom Ombre">
+                                    <span class="circle-swatch gradient-ombre"></span>
                                 </button>
                             </div>
                         </div>
 
-                        <button class="next-btn" id="nextToPhase2" disabled>
+                        <div class="option-group compact">
+                            <h3 class="option-label">Size</h3>
+                            <div class="size-circles">
+                                <button class="size-circle" data-size="xs">XS</button>
+                                <button class="size-circle" data-size="s">S</button>
+                                <button class="size-circle" data-size="m">M</button>
+                                <button class="size-circle" data-size="l">L</button>
+                                <button class="size-circle" data-size="xl">XL</button>
+                                <button class="size-circle" data-size="xxl">XXL</button>
+                            </div>
+                        </div>
+
+                        <button class="next-btn compact" id="nextToPhase2" disabled>
                             Continue to Graphics
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
                                 <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
