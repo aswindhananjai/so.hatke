@@ -237,7 +237,6 @@ body {
 
 .brand-tab.selected {
     border-color: var(--primary-orange);
-    border-width: 3px;
     background: white;
     color: var(--primary-orange);
 }
