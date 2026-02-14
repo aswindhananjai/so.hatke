@@ -309,8 +309,9 @@ body {
 }
 
 .color-circle.selected {
+    border-color: transparent;
     outline: 3px solid var(--primary-orange);
-    outline-offset: 2px;
+    outline-offset: 0px;
 }
 
 .circle-swatch {
