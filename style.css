@@ -189,11 +189,11 @@ body {
 }
 
 .option-group {
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
 }
 
 .option-group.compact {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
 }
 
 .option-label {
@@ -236,8 +236,10 @@ body {
 
 .brand-tab.selected {
     border-color: var(--primary-orange);
-    background: rgba(255, 87, 56, 0.1);
-    color: var(--primary-orange);
+    background: var(--primary-orange);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 87, 56, 0.3);
 }
 
 .tab-price {
@@ -247,7 +249,7 @@ body {
 }
 
 .brand-tab.selected .tab-price {
-    color: var(--primary-orange);
+    color: white;
 }
 
 /* ===== COLOR CIRCLES ===== */
@@ -277,8 +279,9 @@ body {
 
 .color-circle.selected {
     border-color: var(--primary-orange);
-    border-width: 3px;
-    box-shadow: 0 0 0 2px rgba(255, 87, 56, 0.2);
+    border-width: 4px;
+    box-shadow: 0 0 0 3px rgba(255, 87, 56, 0.3);
+    transform: scale(1.15);
 }
 
 .circle-swatch {
@@ -321,6 +324,8 @@ body {
     border-color: var(--primary-orange);
     background: var(--primary-orange);
     color: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(255, 87, 56, 0.3);
 }
 
 /* Gradient for ombre */
