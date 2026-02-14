@@ -61,9 +61,19 @@ function updateTotalPrice() {
 }
 
 function updatePreview() {
-    // Update jacket color
-    if (state.color) {
+    // Update jacket color and image
+    if (state.color && state.brand) {
         elements.jacketBase.className = `jacket-base ${state.color}`;
+        
+        // Try to load actual denim image
+        const brandLower = state.brand.toLowerCase();
+        const imagePath = `assets/denim/${brandLower}-${state.color}.jpg`;
+        
+        // Set background image - will fall back to CSS gradient if image doesn't exist
+        elements.jacketBase.style.backgroundImage = `url('${imagePath}')`;
+    } else if (state.color) {
+        elements.jacketBase.className = `jacket-base ${state.color}`;
+        elements.jacketBase.style.backgroundImage = '';
     }
     
     // Update graphics

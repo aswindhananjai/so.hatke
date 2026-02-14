@@ -511,6 +511,9 @@ body {
     width: 90%;
     height: 90%;
     background: var(--light-wash);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: var(--radius-md);
     position: relative;
     transition: background var(--transition-smooth);
@@ -520,6 +523,7 @@ body {
     justify-content: center;
 }
 
+/* Denim jacket image backgrounds - will be set dynamically via JavaScript */
 .jacket-base.light {
     background: linear-gradient(135deg, #A4C8E1 0%, #8FB5D1 100%);
 }
@@ -534,6 +538,12 @@ body {
 
 .jacket-base.ombre {
     background: linear-gradient(135deg, #FF6B9D 0%, #C06C84 50%, #6C5B7B 100%);
+}
+
+/* When actual images are available, they will override the gradients */
+.jacket-base[style*="background-image"] {
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 .graphics-layer {
