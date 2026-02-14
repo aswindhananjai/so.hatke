@@ -171,7 +171,7 @@ body {
 .config-panel {
     background: white;
     border-radius: var(--radius-lg);
-    padding: var(--spacing-md);
+    padding: 0;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     height: 100%;
     display: flex;
@@ -181,11 +181,86 @@ body {
 
 .config-section {
     display: none;
+    flex-direction: column;
+    height: 100%;
 }
 
 .config-section.active {
-    display: block;
+    display: flex;
     animation: fadeInUp 0.5s ease;
+}
+
+/* Progress Stepper */
+.progress-stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+    gap: var(--spacing-xs);
+    flex-shrink: 0;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all var(--transition-fast);
+}
+
+.step-item.active .step-number {
+    background: var(--primary-orange);
+    color: white;
+    box-shadow: 0 2px 8px rgba(255, 87, 56, 0.3);
+}
+
+.step-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #999;
+    transition: color var(--transition-fast);
+}
+
+.step-item.active .step-text {
+    color: var(--primary-orange);
+}
+
+.step-connector {
+    width: 40px;
+    height: 2px;
+    background: #e0e0e0;
+    margin: 0 var(--spacing-xs);
+    margin-bottom: 20px;
+}
+
+/* Section Content - Scrollable Area */
+.section-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+}
+
+/* Section Actions - Anchored at Bottom */
+.section-actions {
+    flex-shrink: 0;
+    padding: var(--spacing-md);
+    border-top: 1px solid #f0f0f0;
 }
 
 @keyframes fadeInUp {

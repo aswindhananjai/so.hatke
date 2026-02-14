@@ -35,117 +35,85 @@
                 <div class="config-panel">
                     <!-- Phase 1: The Canvas -->
                     <section class="config-section active" id="phase1">
+                        <!-- Progress Stepper -->
+                        <div class="progress-stepper">
+                            <div class="step-item active">
+                                <div class="step-number">1</div>
+                                <div class="step-text">Canvas</div>
+                            </div>
+                            <div class="step-connector"></div>
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-text">Design</div>
+                            </div>
+                            <div class="step-connector"></div>
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-text">Text</div>
+                            </div>
+                        </div>
+
                         <h2 class="section-title">
                             <span class="phase-number">01</span>
                             Choose Your Canvas
                         </h2>
 
-                        <div class="option-group compact">
-                            <h3 class="option-label">Brand</h3>
-                            <div class="brand-tabs">
-                                <button class="brand-tab" data-brand="levis" data-price="3499">
-                                    Levi's <span class="tab-price">₹3,499</span>
-                                </button>
-                                <button class="brand-tab" data-brand="zara" data-price="2499">
-                                    Zara <span class="tab-price">₹2,499</span>
-                                </button>
-                                <button class="brand-tab" data-brand="hm" data-price="1999">
-                                    H&M <span class="tab-price">₹1,999</span>
-                                </button>
-                                <button class="brand-tab" data-brand="thrifted" data-price="1499">
-                                    Thrifted <span class="tab-price">₹1,499</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="option-group compact">
-                            <h3 class="option-label">Color</h3>
-                            <div class="color-circles">
-                                <button class="color-circle" data-color="light" title="Light Wash">
-                                    <span class="circle-swatch" style="background: #A4C8E1;"></span>
-                                </button>
-                                <button class="color-circle" data-color="dark" title="Dark Wash">
-                                    <span class="circle-swatch" style="background: #2C3E50;"></span>
-                                </button>
-                                <button class="color-circle" data-color="black" title="Black">
-                                    <span class="circle-swatch" style="background: #1A1A1A;"></span>
-                                </button>
-                                <button class="color-circle" data-color="ombre" title="Custom Ombre">
-                                    <span class="circle-swatch gradient-ombre"></span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="option-group compact">
-                            <h3 class="option-label">Size</h3>
-                            <div class="size-circles">
-                                <button class="size-circle" data-size="xs">XS</button>
-                                <button class="size-circle" data-size="s">S</button>
-                                <button class="size-circle" data-size="m">M</button>
-                                <button class="size-circle" data-size="l">L</button>
-                                <button class="size-circle" data-size="xl">XL</button>
-                                <button class="size-circle" data-size="xxl">XXL</button>
-                            </div>
-                        </div>
-
-                        <button class="next-btn compact" id="nextToPhase2" disabled>
-                            Continue to Graphics
-                            <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
-                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </section>
-
-                    <!-- Phase 2: The Graphics -->
-                    <section class="config-section" id="phase2">
-                        <h2 class="section-title">
-                            <span class="phase-number">02</span>
-                            Add Graphics
-                        </h2>
-
-                        <div class="design-vault">
-                            <div class="graphic-card" data-graphic="ace" data-price="800">
-                                <div class="graphic-preview">🂡</div>
-                                <div class="graphic-info">
-                                    <h4>The Ace of Spades</h4>
-                                    <span class="graphic-price">+₹800</span>
+                        <!-- Scrollable Content Area -->
+                        <div class="section-content">
+                            <div class="option-group compact">
+                                <h3 class="option-label">Brand</h3>
+                                <div class="brand-tabs">
+                                    <button class="brand-tab" data-brand="levis" data-price="3499">
+                                        Levi's <span class="tab-price">₹3,499</span>
+                                    </button>
+                                    <button class="brand-tab" data-brand="zara" data-price="2499">
+                                        Zara <span class="tab-price">₹2,499</span>
+                                    </button>
+                                    <button class="brand-tab" data-brand="hm" data-price="1999">
+                                        H&M <span class="tab-price">₹1,999</span>
+                                    </button>
+                                    <button class="brand-tab" data-brand="thrifted" data-price="1499">
+                                        Thrifted <span class="tab-price">₹1,499</span>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="graphic-card" data-graphic="lightning" data-price="1200">
-                                <div class="graphic-preview">⚡</div>
-                                <div class="graphic-info">
-                                    <h4>Lightning McQueen</h4>
-                                    <span class="graphic-price">+₹1,200</span>
+
+                            <div class="option-group compact">
+                                <h3 class="option-label">Color</h3>
+                                <div class="color-circles">
+                                    <button class="color-circle" data-color="light" title="Light Wash">
+                                        <span class="circle-swatch" style="background: #A4C8E1;"></span>
+                                    </button>
+                                    <button class="color-circle" data-color="dark" title="Dark Wash">
+                                        <span class="circle-swatch" style="background: #2C3E50;"></span>
+                                    </button>
+                                    <button class="color-circle" data-color="black" title="Black">
+                                        <span class="circle-swatch" style="background: #1A1A1A;"></span>
+                                    </button>
+                                    <button class="color-circle" data-color="ombre" title="Custom Ombre">
+                                        <span class="circle-swatch gradient-ombre"></span>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="graphic-card" data-graphic="karan" data-price="1500">
-                                <div class="graphic-preview">🎤</div>
-                                <div class="graphic-info">
-                                    <h4>Karan Aujla Silhouette</h4>
-                                    <span class="graphic-price">+₹1,500</span>
-                                </div>
-                            </div>
-                            <div class="graphic-card" data-graphic="sunflower" data-price="600">
-                                <div class="graphic-preview">🌻</div>
-                                <div class="graphic-info">
-                                    <h4>Sunflowers</h4>
-                                    <span class="graphic-price">+₹600</span>
+
+                            <div class="option-group compact">
+                                <h3 class="option-label">Size</h3>
+                                <div class="size-circles">
+                                    <button class="size-circle" data-size="xs">XS</button>
+                                    <button class="size-circle" data-size="s">S</button>
+                                    <button class="size-circle" data-size="m">M</button>
+                                    <button class="size-circle" data-size="l">L</button>
+                                    <button class="size-circle" data-size="xl">XL</button>
+                                    <button class="size-circle" data-size="xxl">XXL</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="phase-nav">
-                            <button class="back-btn" id="backToPhase1">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                Back
-                            </button>
-                            <button class="next-btn" id="nextToPhase3">
-                                Continue to Text
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <!-- Anchored Button at Bottom -->
+                        <div class="section-actions">
+                            <button class="next-btn compact" id="nextToPhase2" disabled>
+                                Continue to Graphics
+                                <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
                                     <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -153,71 +121,118 @@
                         </div>
                     </section>
 
-                    <!-- Phase 3: Custom Text -->
-                    <section class="config-section" id="phase3">
-                        <h2 class="section-title">
-                            <span class="phase-number">03</span>
-                            Add Custom Text
-                        </h2>
-
-                        <div class="option-group">
-                            <h3 class="option-label">Your Text (Optional)</h3>
-                            <input type="text" id="customText" class="text-input"
-                                placeholder="Enter name or quote (max 10 chars)" maxlength="10">
-                            <p class="text-note">₹300 for up to 10 characters</p>
-                        </div>
-
-                        <div class="option-group">
-                            <h3 class="option-label">Font Style</h3>
-                            <div class="font-grid">
-                                <button class="font-card" data-font="graffiti">
-                                    <span class="font-preview" style="font-family: 'Righteous', cursive;">Aa</span>
-                                    <span class="font-name">Graffiti</span>
-                                </button>
-                                <button class="font-card" data-font="script">
-                                    <span class="font-preview"
-                                        style="font-family: cursive; font-style: italic;">Aa</span>
-                                    <span class="font-name">Script</span>
-                                </button>
-                                <button class="font-card" data-font="block">
-                                    <span class="font-preview"
-                                        style="font-family: 'Poppins', sans-serif; font-weight: 800;">Aa</span>
-                                    <span class="font-name">Block</span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="phase-nav">
-                            <button class="back-btn" id="backToPhase2">
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                Back
-                            </button>
-                            <button class="finalize-btn" id="finalizeBtn">
-                                🤝 Finalise Design
-                            </button>
-                        </div>
-                    </section>
-                </div>
-
-                <!-- Right Panel - Live Preview -->
-                <div class="preview-panel">
-                    <div class="jacket-preview" id="jacketPreview">
-                        <div class="jacket-base" id="jacketBase">
-                            <!-- Graphics will be overlaid here -->
-                            <div class="graphics-layer" id="graphicsLayer"></div>
-                            <div class="text-layer" id="textLayer"></div>
-                        </div>
+                    <!-- Phase 2: The Graphics -->
+                    <div class="graphic-preview">🂡</div>
+                    <div class="graphic-info">
+                        <h4>The Ace of Spades</h4>
+                        <span class="graphic-price">+₹800</span>
                     </div>
-
-                    <!-- Price Display -->
-                    <div class="preview-price">
-                        <span class="price-value" id="totalPrice">₹0</span>
+                </div>
+                <div class="graphic-card" data-graphic="lightning" data-price="1200">
+                    <div class="graphic-preview">⚡</div>
+                    <div class="graphic-info">
+                        <h4>Lightning McQueen</h4>
+                        <span class="graphic-price">+₹1,200</span>
+                    </div>
+                </div>
+                <div class="graphic-card" data-graphic="karan" data-price="1500">
+                    <div class="graphic-preview">🎤</div>
+                    <div class="graphic-info">
+                        <h4>Karan Aujla Silhouette</h4>
+                        <span class="graphic-price">+₹1,500</span>
+                    </div>
+                </div>
+                <div class="graphic-card" data-graphic="sunflower" data-price="600">
+                    <div class="graphic-preview">🌻</div>
+                    <div class="graphic-info">
+                        <h4>Sunflowers</h4>
+                        <span class="graphic-price">+₹600</span>
                     </div>
                 </div>
             </div>
+
+            <div class="phase-nav">
+                <button class="back-btn" id="backToPhase1">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    Back
+                </button>
+                <button class="next-btn" id="nextToPhase3">
+                    Continue to Text
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            </section>
+
+            <!-- Phase 3: Custom Text -->
+            <section class="config-section" id="phase3">
+                <h2 class="section-title">
+                    <span class="phase-number">03</span>
+                    Add Custom Text
+                </h2>
+
+                <div class="option-group">
+                    <h3 class="option-label">Your Text (Optional)</h3>
+                    <input type="text" id="customText" class="text-input"
+                        placeholder="Enter name or quote (max 10 chars)" maxlength="10">
+                    <p class="text-note">₹300 for up to 10 characters</p>
+                </div>
+
+                <div class="option-group">
+                    <h3 class="option-label">Font Style</h3>
+                    <div class="font-grid">
+                        <button class="font-card" data-font="graffiti">
+                            <span class="font-preview" style="font-family: 'Righteous', cursive;">Aa</span>
+                            <span class="font-name">Graffiti</span>
+                        </button>
+                        <button class="font-card" data-font="script">
+                            <span class="font-preview" style="font-family: cursive; font-style: italic;">Aa</span>
+                            <span class="font-name">Script</span>
+                        </button>
+                        <button class="font-card" data-font="block">
+                            <span class="font-preview"
+                                style="font-family: 'Poppins', sans-serif; font-weight: 800;">Aa</span>
+                            <span class="font-name">Block</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="phase-nav">
+                    <button class="back-btn" id="backToPhase2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Back
+                    </button>
+                    <button class="finalize-btn" id="finalizeBtn">
+                        🤝 Finalise Design
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Panel - Live Preview -->
+        <div class="preview-panel">
+            <div class="jacket-preview" id="jacketPreview">
+                <div class="jacket-base" id="jacketBase">
+                    <!-- Graphics will be overlaid here -->
+                    <div class="graphics-layer" id="graphicsLayer"></div>
+                    <div class="text-layer" id="textLayer"></div>
+                </div>
+            </div>
+
+            <!-- Price Display -->
+            <div class="preview-price">
+                <span class="price-value" id="totalPrice">₹0</span>
+            </div>
+        </div>
+        </div>
         </div>
     </main>
 
