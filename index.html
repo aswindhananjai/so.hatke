@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,17 @@
     <meta name="description" content="Design your own custom handpainted denim jacket with So Hatke">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Righteous&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <h1>So Hatke</h1>
+                <img src="logo.png" alt="So Hatke" class="logo-img">
             </div>
             <div class="price-counter">
                 <span class="price-label">Total:</span>
@@ -36,7 +39,7 @@
                             <span class="phase-number">01</span>
                             Choose Your Canvas
                         </h2>
-                        
+
                         <div class="option-group">
                             <h3 class="option-label">Select Brand</h3>
                             <div class="brand-grid">
@@ -84,7 +87,8 @@
                         <button class="next-btn" id="nextToPhase2" disabled>
                             Continue to Graphics
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </button>
                     </section>
@@ -95,7 +99,7 @@
                             <span class="phase-number">02</span>
                             Add Graphics
                         </h2>
-                        
+
                         <div class="design-vault">
                             <div class="graphic-card" data-graphic="ace" data-price="800">
                                 <div class="graphic-preview">🂡</div>
@@ -130,14 +134,16 @@
                         <div class="phase-nav">
                             <button class="back-btn" id="backToPhase1">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 Back
                             </button>
                             <button class="next-btn" id="nextToPhase3">
                                 Continue to Text
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </button>
                         </div>
@@ -149,10 +155,11 @@
                             <span class="phase-number">03</span>
                             Add Custom Text
                         </h2>
-                        
+
                         <div class="option-group">
                             <h3 class="option-label">Your Text (Optional)</h3>
-                            <input type="text" id="customText" class="text-input" placeholder="Enter name or quote (max 10 chars)" maxlength="10">
+                            <input type="text" id="customText" class="text-input"
+                                placeholder="Enter name or quote (max 10 chars)" maxlength="10">
                             <p class="text-note">₹300 for up to 10 characters</p>
                         </div>
 
@@ -164,11 +171,13 @@
                                     <span class="font-name">Graffiti</span>
                                 </button>
                                 <button class="font-card" data-font="script">
-                                    <span class="font-preview" style="font-family: cursive; font-style: italic;">Aa</span>
+                                    <span class="font-preview"
+                                        style="font-family: cursive; font-style: italic;">Aa</span>
                                     <span class="font-name">Script</span>
                                 </button>
                                 <button class="font-card" data-font="block">
-                                    <span class="font-preview" style="font-family: 'Poppins', sans-serif; font-weight: 800;">Aa</span>
+                                    <span class="font-preview"
+                                        style="font-family: 'Poppins', sans-serif; font-weight: 800;">Aa</span>
                                     <span class="font-name">Block</span>
                                 </button>
                             </div>
@@ -177,7 +186,8 @@
                         <div class="phase-nav">
                             <button class="back-btn" id="backToPhase2">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                                 Back
                             </button>
@@ -210,4 +220,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

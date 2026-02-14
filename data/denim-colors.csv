@@ -1,0 +1,5 @@
+id,color_name,color_code,image_filename
+light,Light Wash,#A4C8E1,light-wash.jpg
+dark,Dark Wash,#2C3E50,dark-wash.jpg
+black,Black,#1A1A1A,black.jpg
+ombre,Custom Ombre,gradient,ombre.jpg
