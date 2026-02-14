@@ -555,29 +555,24 @@ body {
 }
 
 .preview-price {
-    position: absolute;
-    bottom: var(--spacing-md);
-    right: var(--spacing-md);
-    background: rgba(255, 255, 255, 0.95);
-    color: var(--text-dark);
-    padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: var(--radius-sm);
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 0.9rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
+    color: #666;
+    margin-top: var(--spacing-md);
 }
 
 .preview-price .price-label {
-    font-size: 0.75rem;
-    color: #666;
+    font-size: 0.85rem;
+    color: #999;
     margin-right: var(--spacing-xs);
 }
 
 .preview-price .price-value {
     color: var(--primary-orange);
     font-weight: 700;
+    font-size: 1.1rem;
 }
 
 .jacket-preview {
@@ -590,6 +585,7 @@ body {
     position: relative;
     overflow: hidden;
     min-height: 400px;
+    margin-bottom: var(--spacing-sm);
 }
 
 .jacket-base {
