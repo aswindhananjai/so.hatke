@@ -215,7 +215,7 @@ body {
 .brand-tab {
     flex: 1;
     background: white;
-    border: 2px solid #ddd;
+    border: 3px solid #ddd;
     border-radius: var(--radius-sm);
     padding: var(--spacing-xs) var(--spacing-sm);
     cursor: pointer;
@@ -575,13 +575,11 @@ body {
 
 .jacket-preview {
     flex: 1;
-    background: white;
-    border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     min-height: 400px;
     margin-bottom: var(--spacing-sm);
 }
