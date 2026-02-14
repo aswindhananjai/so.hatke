@@ -167,7 +167,7 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-md);
     align-items: stretch;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 120px - var(--spacing-md) * 2);
 }
 
 /* ===== CONFIG PANEL ===== */
