@@ -164,10 +164,10 @@ function navigateToPhase(phaseNumber) {
 }
 
 // ===== PHASE 1: BRAND & COLOR SELECTION =====
-document.querySelectorAll('.brand-card').forEach(card => {
+document.querySelectorAll('.brand-tab').forEach(card => {
     card.addEventListener('click', function () {
         // Remove previous selection
-        document.querySelectorAll('.brand-card').forEach(c => c.classList.remove('selected'));
+        document.querySelectorAll('.brand-tab').forEach(c => c.classList.remove('selected'));
 
         // Add selection to clicked card
         this.classList.add('selected');
@@ -183,10 +183,10 @@ document.querySelectorAll('.brand-card').forEach(card => {
     });
 });
 
-document.querySelectorAll('.color-card').forEach(card => {
+document.querySelectorAll('.color-circle').forEach(card => {
     card.addEventListener('click', function () {
         // Remove previous selection
-        document.querySelectorAll('.color-card').forEach(c => c.classList.remove('selected'));
+        document.querySelectorAll('.color-circle').forEach(c => c.classList.remove('selected'));
 
         // Add selection to clicked card
         this.classList.add('selected');
